@@ -27,11 +27,24 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the data to your backend
+    
+    // Create WhatsApp message
+    const whatsappMessage = `Hello! I'm interested in your nursery services.
+
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Project Type: ${formData.projectType}
+Message: ${formData.message}`;
+    
+    const whatsappUrl = `https://wa.me/919425324850?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
+    
     toast({
       title: "Message Sent!",
       description: "Thank you for your inquiry. We'll get back to you soon.",
     });
+    
     setFormData({
       name: "",
       email: "",
@@ -51,20 +64,20 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      info: "+91-XXXXXXXXXX",
-      detail: "Mon-Sat: 9:00 AM - 6:00 PM"
+      info: "+91 9425324850, +91 9303006400",
+      detail: "All Days Open: 10:00 AM - 10:00 PM"
     },
     {
       icon: Mail,
       title: "Email",
-      info: "info@majithanursery.com",
+      info: "majithafloricultre@gmail.com",
       detail: "We reply within 24 hours"
     },
     {
       icon: Clock,
       title: "Working Hours",
-      info: "Monday - Saturday",
-      detail: "9:00 AM - 6:00 PM"
+      info: "All Days Open",
+      detail: "10:00 AM - 10:00 PM"
     }
   ];
 

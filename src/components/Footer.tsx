@@ -1,13 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock, Leaf } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Credentials", href: "#credentials" },
-    { name: "Contact", href: "#contact" }
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Credentials", href: "/credentials" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Clients", href: "/clients" },
+    { name: "Contact", href: "/contact" }
   ];
 
   const services = [
@@ -56,12 +59,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
+                  <Link
+                    to={link.href}
                     className="text-white/80 hover:text-white transition-colors cursor-pointer"
                   >
                     {link.name}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -92,17 +95,16 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-                <p className="text-white/90 text-sm">+91-XXXXXXXXXX</p>
+                <p className="text-white/90 text-sm">+91 9425324850, +91 9303006400</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                <p className="text-white/90 text-sm">info@majithanursery.com</p>
+                <p className="text-white/90 text-sm">majithafloricultre@gmail.com</p>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-white/90 text-sm">Mon - Sat: 9:00 AM - 6:00 PM</p>
-                  <p className="text-white/70 text-xs">Sunday: Closed</p>
+                  <p className="text-white/90 text-sm">All Days Open: 10:00 AM - 10:00 PM</p>
                 </div>
               </div>
             </div>

@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -14,6 +16,8 @@ const Header = () => {
       setIsMenuOpen(false);
     }
   };
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -32,46 +36,58 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection('home')}
-              className="text-foreground hover:text-primary transition-colors"
+            <Link
+              to="/"
+              className={`transition-colors ${isActive('/') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
             >
               Home
-            </button>
-            <button
-              onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link
+              to="/about"
+              className={`transition-colors ${isActive('/about') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
             >
               About Us
-            </button>
-            <button
-              onClick={() => scrollToSection('services')}
-              className="text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link
+              to="/services"
+              className={`transition-colors ${isActive('/services') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
             >
               Services
-            </button>
-            <button
-              onClick={() => scrollToSection('credentials')}
-              className="text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link
+              to="/credentials"
+              className={`transition-colors ${isActive('/credentials') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
             >
               Credentials
-            </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link
+              to="/gallery"
+              className={`transition-colors ${isActive('/gallery') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
+            >
+              Gallery
+            </Link>
+            <Link
+              to="/clients"
+              className={`transition-colors ${isActive('/clients') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
+            >
+              Clients
+            </Link>
+            <Link
+              to="/contact"
+              className={`transition-colors ${isActive('/contact') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
             >
               Contact
-            </button>
+            </Link>
           </nav>
 
           {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="w-4 h-4" />
-              <span>+91-XXXXXXXXXX</span>
+              <span>+91 9425324850</span>
             </div>
-            <Button onClick={() => scrollToSection('contact')} className="bg-primary hover:bg-primary/90">
-              Get Quote
+            <Button asChild className="bg-primary hover:bg-primary/90">
+              <Link to="/contact">Get Quote</Link>
             </Button>
           </div>
 
@@ -88,43 +104,62 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
-              <button
-                onClick={() => scrollToSection('home')}
-                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              <Link
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
+                className={`text-left transition-colors py-2 ${isActive('/') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
               >
                 Home
-              </button>
-              <button
-                onClick={() => scrollToSection('about')}
-                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              </Link>
+              <Link
+                to="/about"
+                onClick={() => setIsMenuOpen(false)}
+                className={`text-left transition-colors py-2 ${isActive('/about') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
               >
                 About Us
-              </button>
-              <button
-                onClick={() => scrollToSection('services')}
-                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              </Link>
+              <Link
+                to="/services"
+                onClick={() => setIsMenuOpen(false)}
+                className={`text-left transition-colors py-2 ${isActive('/services') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
               >
                 Services
-              </button>
-              <button
-                onClick={() => scrollToSection('credentials')}
-                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              </Link>
+              <Link
+                to="/credentials"
+                onClick={() => setIsMenuOpen(false)}
+                className={`text-left transition-colors py-2 ${isActive('/credentials') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
               >
                 Credentials
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              </Link>
+              <Link
+                to="/gallery"
+                onClick={() => setIsMenuOpen(false)}
+                className={`text-left transition-colors py-2 ${isActive('/gallery') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
+              >
+                Gallery
+              </Link>
+              <Link
+                to="/clients"
+                onClick={() => setIsMenuOpen(false)}
+                className={`text-left transition-colors py-2 ${isActive('/clients') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
+              >
+                Clients
+              </Link>
+              <Link
+                to="/contact"
+                onClick={() => setIsMenuOpen(false)}
+                className={`text-left transition-colors py-2 ${isActive('/contact') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
               >
                 Contact
-              </button>
+              </Link>
               <div className="pt-4 border-t border-border">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-4">
                   <Phone className="w-4 h-4" />
-                  <span>+91-XXXXXXXXXX</span>
+                  <span>+91 9425324850</span>
                 </div>
-                <Button onClick={() => scrollToSection('contact')} className="w-full">
-                  Get Quote
+                <Button asChild className="w-full">
+                  <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Get Quote</Link>
                 </Button>
               </div>
             </nav>
