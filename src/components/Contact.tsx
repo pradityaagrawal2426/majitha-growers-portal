@@ -65,7 +65,7 @@ Message: ${formData.message}`;
     {
       icon: Phone,
       title: "Phone",
-      info: "9425324850, 9303006400",
+      info: "9425324850",
       detail: "All Days Open: 10:00 AM - 10:00 PM"
     },
     {
