@@ -36,35 +36,79 @@ const Home = () => {
       <Header />
       <Hero />
       
-      {/* Director's Message Section */}
+      {/* Enhanced Features Section with Images */}
       <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-6">
-              Director's Message
+          <div className="text-center mb-16">
+            <Badge variant="secondary" className="mb-4">
+              Why Choose Majitha Floriculture™ Nursery
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              Welcome to Our Green World
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Central India's Premier Plant Destination
             </h2>
-            <div className="bg-card p-8 rounded-lg shadow-lg border-l-4 border-primary">
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                At Majitha Floriculture Nursery, we don't just grow plants — we grow life, color, and sustainability. 
-                Every leaf, every bloom, every root we nurture carries our promise: to bring nature closer to you in the 
-                most responsible, beautiful, and innovative way possible.
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              With over 18 years of excellence and spanning 20 acres, we're your trusted partner for all horticultural needs
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-6">Our Plantation Excellence</h3>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Located in the heart of Bhedaghat, Jabalpur (M.P.), our state-of-the-art nursery combines traditional 
+                Indian horticultural wisdom with modern cultivation techniques. We maintain the largest inventory 
+                of native and exotic plants in Central India.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                We believe horticulture is not just an industry — it's a living art. Whether you're a home gardener, 
-                a landscape designer, or a business seeking eco-friendly solutions, we're here to turn your spaces into 
-                thriving green experiences.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Thank you for trusting us. Let's grow together.
-              </p>
-              <div className="text-right">
-                <p className="font-semibold text-foreground">Warm regards,</p>
-                <p className="text-primary font-bold text-xl">Nitin Agrawal</p>
-                <p className="text-sm text-muted-foreground italic">Director</p>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-primary rounded-full mr-3"></div>
+                  <span>Scientific polybag and root trainer systems</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-primary rounded-full mr-3"></div>
+                  <span>Advanced plant health management</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-primary rounded-full mr-3"></div>
+                  <span>Government approved and NHM registered</span>
+                </div>
               </div>
+            </div>
+            <div className="relative">
+              <img
+                src="/lovable-uploads/f38c6e91-7f96-4091-a0f7-f673e97b7aff.png"
+                alt="Majitha Nursery Plantation"
+                className="w-full h-[400px] object-cover rounded-lg shadow-xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-lg"></div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="lg:order-2">
+              <h3 className="text-2xl font-bold text-foreground mb-6">Quality & Innovation</h3>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Our tissue culture lab and advanced propagation facilities ensure disease-free, high-quality plants. 
+                From grafted fruit varieties to forest species, every plant undergoes strict quality control measures 
+                before reaching our customers.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center p-4 bg-card rounded-lg">
+                  <div className="text-2xl font-bold text-primary">1000+</div>
+                  <div className="text-sm text-muted-foreground">Plant Varieties</div>
+                </div>
+                <div className="text-center p-4 bg-card rounded-lg">
+                  <div className="text-2xl font-bold text-primary">50+</div>
+                  <div className="text-sm text-muted-foreground">Expert Team</div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:order-1">
+              <img
+                src="/lovable-uploads/c2610a9e-0f83-4d6c-beda-3aa513352719.png"
+                alt="Quality Plants"
+                className="w-full h-[400px] object-cover rounded-lg shadow-xl"
+              />
             </div>
           </div>
         </div>
@@ -114,7 +158,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
-              <Link to="/contact">Get Quote Now</Link>
+              <Link to="/contact">Enquire Now</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
               <Link to="/gallery">View Gallery</Link>

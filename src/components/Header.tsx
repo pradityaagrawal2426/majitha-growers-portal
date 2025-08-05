@@ -24,13 +24,15 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">M</span>
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-xl">M</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">Majitha Floriculture</h1>
-              <p className="text-sm text-muted-foreground -mt-1">Nursery</p>
+              <h1 className="text-xl font-bold text-foreground">
+                Majitha Floriculture™
+                <span className="block text-lg text-primary font-semibold -mt-1">Nursery</span>
+              </h1>
             </div>
           </div>
 
@@ -53,6 +55,12 @@ const Header = () => {
               className={`transition-colors ${isActive('/services') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
             >
               Services
+            </Link>
+            <Link
+              to="/products"
+              className={`transition-colors ${isActive('/products') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
+            >
+              Products
             </Link>
             <Link
               to="/credentials"
@@ -84,10 +92,10 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="w-4 h-4" />
-              <span>+91 9425324850</span>
+              <span>9425324850</span>
             </div>
             <Button asChild className="bg-primary hover:bg-primary/90">
-              <Link to="/contact">Get Quote</Link>
+              <Link to="/contact">Enquire Now</Link>
             </Button>
           </div>
 
@@ -126,6 +134,13 @@ const Header = () => {
                 Services
               </Link>
               <Link
+                to="/products"
+                onClick={() => setIsMenuOpen(false)}
+                className={`text-left transition-colors py-2 ${isActive('/products') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
+              >
+                Products
+              </Link>
+              <Link
                 to="/credentials"
                 onClick={() => setIsMenuOpen(false)}
                 className={`text-left transition-colors py-2 ${isActive('/credentials') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'}`}
@@ -156,10 +171,10 @@ const Header = () => {
               <div className="pt-4 border-t border-border">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-4">
                   <Phone className="w-4 h-4" />
-                  <span>+91 9425324850</span>
+                  <span>9425324850</span>
                 </div>
                 <Button asChild className="w-full">
-                  <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Get Quote</Link>
+                  <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Enquire Now</Link>
                 </Button>
               </div>
             </nav>

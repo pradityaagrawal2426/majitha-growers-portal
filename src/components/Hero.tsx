@@ -39,9 +39,9 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Majitha Floriculture
-            <span className="block text-accent">Nursery</span>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+            <span className="block mb-2">Majitha Floriculture™</span>
+            <span className="block text-accent text-3xl md:text-5xl lg:text-6xl">Nursery</span>
           </h1>
 
           {/* Tagline */}
@@ -50,10 +50,21 @@ const Hero = () => {
           </p>
 
           {/* Description */}
-          <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Central India's largest, most reliable, and eco-conscious nursery with over 18 years of horticultural distinction. 
-            Spanning 20 acres with 1000+ plant varieties.
-          </p>
+          <div className="max-w-4xl mx-auto mb-8">
+            <p className="text-lg md:text-xl mb-4 opacity-90 leading-relaxed">
+              Central India's largest, most reliable, and eco-conscious nursery with over 18 years of horticultural distinction.
+            </p>
+            <p className="text-base md:text-lg opacity-80 leading-relaxed">
+              Spanning 20 acres with 1000+ plant varieties • NHM Registered Big Model Nursery • 
+              Star-rated by National Horticulture Board • Serving Government & Private Projects Across India
+            </p>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">✓ Disease-Free Plants</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">✓ Expert Team</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">✓ Timely Delivery</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">✓ 18+ Years Experience</span>
+            </div>
+          </div>
 
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 max-w-2xl mx-auto">
@@ -87,7 +98,7 @@ const Hero = () => {
               onClick={scrollToContact}
               className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-3"
             >
-              Get Quote Now
+              Enquire Now
             </Button>
             <Button 
               size="lg" 

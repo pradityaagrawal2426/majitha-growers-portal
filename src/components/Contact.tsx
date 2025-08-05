@@ -59,12 +59,13 @@ Message: ${formData.message}`;
       icon: MapPin,
       title: "Location",
       info: "Bhedaghat, Jabalpur",
-      detail: "Madhya Pradesh, India"
+      detail: "Madhya Pradesh, India",
+      link: "https://goo.gl/maps/Agt6rsnZ22meEbzc8?g_st=aw"
     },
     {
       icon: Phone,
       title: "Phone",
-      info: "+91 9425324850, +91 9303006400",
+      info: "9425324850, 9303006400",
       detail: "All Days Open: 10:00 AM - 10:00 PM"
     },
     {
@@ -89,7 +90,7 @@ Message: ${formData.message}`;
             Get In Touch
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Let's Grow Together
+            Enquire Now
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to start your green project? Contact us for personalized consultation 
@@ -113,6 +114,17 @@ Message: ${formData.message}`;
                         <h4 className="font-semibold text-foreground mb-1">{item.title}</h4>
                         <p className="text-muted-foreground font-medium">{item.info}</p>
                         <p className="text-sm text-muted-foreground">{item.detail}</p>
+                        {item.link && (
+                          <a 
+                            href={item.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary hover:text-primary/80 text-sm inline-flex items-center mt-1"
+                          >
+                            <MapPin className="w-3 h-3 mr-1" />
+                            View on Google Maps
+                          </a>
+                        )}
                       </div>
                     </div>
                   </CardContent>

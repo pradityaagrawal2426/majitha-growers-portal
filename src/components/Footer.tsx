@@ -40,7 +40,7 @@ const Footer = () => {
                 <Leaf className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Majitha Floriculture</h3>
+                <h3 className="text-xl font-bold">Majitha Floriculture™</h3>
                 <p className="text-sm opacity-90">Nursery</p>
               </div>
             </div>
@@ -49,7 +49,7 @@ const Footer = () => {
               18 years of horticultural distinction.
             </p>
             <p className="text-accent font-medium italic">
-              "Rooted in quality, growing with integrity."
+              "Rooted in quality, growing with integrity."™
             </p>
           </div>
 
@@ -57,7 +57,16 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {quickLinks.map((link, index) => (
+              {[
+                { name: "Home", href: "/" },
+                { name: "About Us", href: "/about" },
+                { name: "Services", href: "/services" },
+                { name: "Products", href: "/products" },
+                { name: "Credentials", href: "/credentials" },
+                { name: "Gallery", href: "/gallery" },
+                { name: "Clients", href: "/clients" },
+                { name: "Contact", href: "/contact" }
+              ].map((link, index) => (
                 <li key={index}>
                   <Link
                     to={link.href}
@@ -95,7 +104,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-                <p className="text-white/90 text-sm">+91 9425324850, +91 9303006400</p>
+                <p className="text-white/90 text-sm">9425324850, 9303006400</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
@@ -133,7 +142,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-white/20 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-white/70 text-sm">
-              © 2024 Majitha Floriculture Nursery. All rights reserved.
+              © 2024 Majitha Floriculture™ Nursery. All rights reserved.
             </p>
             <p className="text-white/70 text-sm">
               Established 2007 | Serving Central India with Pride
