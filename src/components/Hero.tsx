@@ -71,9 +71,12 @@ const Hero = () => {
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-2">
                 <span className="block">Majitha Floriculture™</span>
-                <span className="block text-accent text-3xl md:text-4xl lg:text-5xl xl:text-6xl">Nursery</span>
+                <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Nursery</span>
               </h1>
-              <p className="text-lg md:text-xl opacity-90 mt-2">Hi-tech Producer of Quality Plants</p>
+              <div className="flex items-center justify-center gap-3 mt-2">
+                <MapPin className="w-5 h-5 md:w-6 md:h-6 text-accent" />
+                <p className="text-lg md:text-xl opacity-90">Hi-tech Producer of Quality Plants</p>
+              </div>
             </div>
           </div>
 
