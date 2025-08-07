@@ -81,27 +81,25 @@ const Hero = () => {
           </div>
 
           {/* Creative Location Section */}
-          <div className="max-w-4xl mx-auto mb-8">
-            <div className="bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30 shadow-2xl transform hover:scale-105 transition-transform duration-300">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+          <div className="max-w-2xl mx-auto mb-6">
+            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 border border-white/30 shadow-xl transform hover:scale-105 transition-transform duration-300">
+              <div className="flex items-center justify-center gap-4">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-accent/30 rounded-full blur-xl animate-pulse"></div>
-                  <div className="relative p-6 bg-gradient-to-br from-accent/40 to-primary/40 rounded-full border-2 border-white/30">
-                    <MapPin className="w-12 h-12 md:w-16 md:h-16 text-white drop-shadow-lg" />
+                  <div className="p-3 bg-gradient-to-br from-accent/40 to-primary/40 rounded-full border border-white/30">
+                    <MapPin className="w-6 h-6 text-white drop-shadow-lg" />
                   </div>
                 </div>
-                <div className="text-center md:text-left">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">📍 Visit Our Nursery</h3>
+                <div className="text-center">
+                  <h3 className="text-lg md:text-xl font-bold text-white mb-1">📍 Visit Our Nursery</h3>
                   <a 
                     href="https://goo.gl/maps/Agt6rsnZ22meEbzc8?g_st=aw" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 text-xl md:text-2xl font-semibold text-accent hover:text-white transition-colors duration-300 group"
+                    className="inline-flex items-center gap-2 text-base md:text-lg font-semibold text-accent hover:text-white transition-colors duration-300 group"
                   >
                     Bhedaghat, Jabalpur (M.P.)
-                    <ExternalLink className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                    <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
                   </a>
-                  <p className="text-base md:text-lg opacity-90 mt-2">Click to get directions on Google Maps</p>
                 </div>
               </div>
             </div>
