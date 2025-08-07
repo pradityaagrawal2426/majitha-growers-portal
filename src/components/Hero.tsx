@@ -28,8 +28,8 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src={heroImage}
-          alt="Majitha Floriculture™ Nursery"
+          src="/lovable-uploads/36b1721e-5787-4418-a6d8-7cf7367a5bdc.png"
+          alt="Majitha Floriculture™ Nursery Overview"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/60 to-forest-green/70"></div>

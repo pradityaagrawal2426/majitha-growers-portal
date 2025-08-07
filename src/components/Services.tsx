@@ -50,17 +50,28 @@ const Services = () => {
   return (
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-primary border-primary">
-            Our Services
-          </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Comprehensive Plant Solutions
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From grafted fruit plants to large-scale forestry projects, we provide premium quality 
-            plants and comprehensive services for all your green requirements.
-          </p>
+        {/* Hero Section with Background Image */}
+        <div className="relative mb-20 rounded-3xl overflow-hidden">
+          <img
+            src="/lovable-uploads/f047e4c7-74ff-4188-96ec-8db5d97688ad.png"
+            alt="Open field plant cultivation"
+            className="w-full h-[300px] object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center text-white">
+              <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-white/30">
+                Our Services
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Comprehensive Plant Solutions
+              </h2>
+              <p className="text-xl max-w-3xl mx-auto">
+                From grafted fruit plants to large-scale forestry projects, we provide premium quality 
+                plants and comprehensive services for all your green requirements.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Core Offerings */}
@@ -89,6 +100,45 @@ const Services = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+
+        {/* Visual Showcase Section */}
+        <div className="mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="relative">
+              <img
+                src="/lovable-uploads/aae05f68-b538-4639-9117-ba76033b243a.png"
+                alt="Fresh guava fruit on tree"
+                className="w-full h-[250px] object-cover rounded-xl shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-xl"></div>
+              <div className="absolute bottom-4 left-4">
+                <Badge className="bg-white/90 text-primary">Grafted Fruit Plants</Badge>
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src="/lovable-uploads/9bf8ba29-3b22-40b0-9673-c4816dcb9fcd.png"
+                alt="Tissue culture plant production"
+                className="w-full h-[250px] object-cover rounded-xl shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-xl"></div>
+              <div className="absolute bottom-4 left-4">
+                <Badge className="bg-white/90 text-primary">Tissue Culture</Badge>
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src="/lovable-uploads/16691c7f-49ab-4390-8517-23085bfc5ec3.png"
+                alt="Small plant saplings in containers"
+                className="w-full h-[250px] object-cover rounded-xl shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-xl"></div>
+              <div className="absolute bottom-4 left-4">
+                <Badge className="bg-white/90 text-primary">Young Plants</Badge>
+              </div>
+            </div>
           </div>
         </div>
 

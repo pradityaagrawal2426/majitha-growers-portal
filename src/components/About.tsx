@@ -74,18 +74,56 @@ const About = () => {
             </div>
           </div>
 
-          {/* Highlights Grid */}
-          <div className="grid grid-cols-2 gap-4">
-            {highlights.map((highlight, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <highlight.icon className="w-8 h-8 text-primary mx-auto mb-3" />
-                  <h4 className="font-semibold mb-2 text-foreground">{highlight.title}</h4>
-                  <p className="text-sm text-muted-foreground">{highlight.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+          {/* Beautiful Nursery Image */}
+          <div className="relative">
+            <img
+              src="/lovable-uploads/530663b4-4661-4da5-9f5d-bedba95be6a2.png"
+              alt="Beautiful nursery pathway with palm trees"
+              className="w-full h-[400px] object-cover rounded-2xl shadow-2xl"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
           </div>
+        </div>
+
+        {/* Additional Visual Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="relative lg:order-2">
+            <img
+              src="/lovable-uploads/9e250fa8-3b9d-4ac2-94e6-7e3e3b7ba878.png"
+              alt="Greenhouse with young plant saplings"
+              className="w-full h-[350px] object-cover rounded-2xl shadow-2xl"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+          </div>
+          
+          <div className="lg:order-1">
+            <h3 className="text-3xl font-bold mb-6 text-foreground">State-of-the-Art Facilities</h3>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                Our advanced greenhouse facilities and tissue culture laboratory ensure optimal 
+                growing conditions for all plant varieties. We employ modern irrigation systems, 
+                climate control, and scientific growing methods.
+              </p>
+              <p>
+                Every plant is carefully monitored and nurtured by our team of 50+ trained 
+                professionals who bring decades of combined expertise in horticulture and 
+                plant care.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Highlights Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
+          {highlights.map((highlight, index) => (
+            <Card key={index} className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 text-center">
+                <highlight.icon className="w-8 h-8 text-primary mx-auto mb-3" />
+                <h4 className="font-semibold mb-2 text-foreground">{highlight.title}</h4>
+                <p className="text-sm text-muted-foreground">{highlight.description}</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
         {/* Mission & Vision */}

@@ -85,17 +85,28 @@ Message: ${formData.message}`;
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-primary border-primary">
-            Get In Touch
-          </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Enquire Now
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to start your green project? Contact us for personalized consultation 
-            and premium plant solutions tailored to your requirements.
-          </p>
+        {/* Hero Section with Beautiful Background */}
+        <div className="relative mb-16 rounded-3xl overflow-hidden">
+          <img
+            src="/lovable-uploads/f38c6e91-7f96-4091-a0f7-f673e97b7aff.png"
+            alt="Banana plant cultivation at our nursery"
+            className="w-full h-[250px] object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center text-white">
+              <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-white/30">
+                Get In Touch
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                Enquire Now
+              </h2>
+              <p className="text-xl max-w-3xl mx-auto">
+                Ready to start your green project? Contact us for personalized consultation 
+                and premium plant solutions tailored to your requirements.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
