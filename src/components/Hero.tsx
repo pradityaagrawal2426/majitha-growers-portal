@@ -35,28 +35,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/60 to-forest-green/70"></div>
       </div>
 
-      {/* Location Badge - Top */}
-      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20">
-        <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-2xl border border-white/20">
-          <div className="flex items-center space-x-4">
-            <div className="p-3 bg-primary/15 rounded-xl">
-              <MapPin className="w-10 h-10 text-primary" />
-            </div>
-            <div className="text-left">
-              <p className="text-lg font-bold text-muted-foreground">📍 Our Location</p>
-              <a 
-                href="https://goo.gl/maps/Agt6rsnZ22meEbzc8?g_st=aw" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-2xl font-bold text-foreground hover:text-primary transition-colors flex items-center gap-2"
-              >
-                Bhedaghat, Jabalpur (M.P.)
-                <ExternalLink className="w-6 h-6" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white pt-32">
@@ -99,6 +77,33 @@ const Hero = () => {
               <span className="px-3 py-1 bg-white/20 rounded-full text-sm">✓ Expert Team</span>
               <span className="px-3 py-1 bg-white/20 rounded-full text-sm">✓ Timely Delivery</span>
               <span className="px-3 py-1 bg-white/20 rounded-full text-sm">✓ 18+ Years Experience</span>
+            </div>
+          </div>
+
+          {/* Creative Location Section */}
+          <div className="max-w-4xl mx-auto mb-8">
+            <div className="bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30 shadow-2xl transform hover:scale-105 transition-transform duration-300">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-accent/30 rounded-full blur-xl animate-pulse"></div>
+                  <div className="relative p-6 bg-gradient-to-br from-accent/40 to-primary/40 rounded-full border-2 border-white/30">
+                    <MapPin className="w-12 h-12 md:w-16 md:h-16 text-white drop-shadow-lg" />
+                  </div>
+                </div>
+                <div className="text-center md:text-left">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">📍 Visit Our Nursery</h3>
+                  <a 
+                    href="https://goo.gl/maps/Agt6rsnZ22meEbzc8?g_st=aw" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 text-xl md:text-2xl font-semibold text-accent hover:text-white transition-colors duration-300 group"
+                  >
+                    Bhedaghat, Jabalpur (M.P.)
+                    <ExternalLink className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                  </a>
+                  <p className="text-base md:text-lg opacity-90 mt-2">Click to get directions on Google Maps</p>
+                </div>
+              </div>
             </div>
           </div>
 
