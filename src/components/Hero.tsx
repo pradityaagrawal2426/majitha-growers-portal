@@ -158,21 +158,13 @@ const Hero = () => {
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex justify-center mb-12">
             <Button 
               size="lg" 
               onClick={handleEnquireNow}
               className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-3"
             >
               Enquire Now
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              onClick={scrollToAbout}
-              className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-3"
-            >
-              Learn More
             </Button>
           </div>
 
