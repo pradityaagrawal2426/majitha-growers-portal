@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, MapPin, Calendar, Users, ExternalLink } from "lucide-react";
 import heroImage from "@/assets/hero-nursery.jpg";
-import majithaLogo from "@/assets/majitha-logo-red.png";
+import majithaLogo from "/lovable-uploads/50da42e3-6458-4feb-936d-5fc582fc8957.png";
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   const handleEnquireNow = () => {
-    const message = encodeURIComponent("Hello! I'm interested in your nursery services. Please provide more information.");
+    const message = encodeURIComponent("Hello! I'm interested in your nursery services from Majitha Floriculture™ Nursery. Please provide more information about your plants and services.");
     window.open(`https://wa.me/919425324850?text=${message}`, '_blank');
   };
 
@@ -36,22 +36,22 @@ const Hero = () => {
       </div>
 
       {/* Location Badge - Top */}
-      <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-20">
-        <div className="bg-white/95 backdrop-blur-sm rounded-xl px-6 py-4 shadow-lg border border-white/20">
-          <div className="flex items-center space-x-3">
-            <div className="p-2 bg-primary/10 rounded-lg">
-              <MapPin className="w-6 h-6 text-primary" />
+      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-2xl border border-white/20">
+          <div className="flex items-center space-x-4">
+            <div className="p-3 bg-primary/15 rounded-xl">
+              <MapPin className="w-10 h-10 text-primary" />
             </div>
             <div className="text-left">
-              <p className="text-sm font-medium text-muted-foreground">Located at</p>
+              <p className="text-lg font-bold text-muted-foreground">📍 Our Location</p>
               <a 
                 href="https://goo.gl/maps/Agt6rsnZ22meEbzc8?g_st=aw" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-lg font-bold text-foreground hover:text-primary transition-colors flex items-center gap-1"
+                className="text-2xl font-bold text-foreground hover:text-primary transition-colors flex items-center gap-2"
               >
                 Bhedaghat, Jabalpur (M.P.)
-                <ExternalLink className="w-4 h-4" />
+                <ExternalLink className="w-6 h-6" />
               </a>
             </div>
           </div>
@@ -59,20 +59,21 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white pt-20">
-        <div className="max-w-5xl mx-auto">
+      <div className="relative z-10 container mx-auto px-4 text-center text-white pt-32">
+        <div className="max-w-6xl mx-auto">
           {/* Logo and Company Name */}
-          <div className="flex items-center justify-center mb-6">
+          <div className="flex flex-col items-center justify-center mb-8">
             <img 
               src={majithaLogo} 
-              alt="Majitha Logo" 
-              className="h-16 md:h-20 mr-4"
+              alt="Majitha Floriculture Nursery Logo" 
+              className="h-32 md:h-40 lg:h-48 mb-4 drop-shadow-2xl"
             />
-            <div className="text-left">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                <span className="block">Majitha Floriculture<span className="text-2xl">®</span></span>
-                <span className="block text-accent text-2xl md:text-3xl lg:text-4xl">Nursery</span>
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-2">
+                <span className="block">Majitha Floriculture™</span>
+                <span className="block text-accent text-3xl md:text-4xl lg:text-5xl xl:text-6xl">Nursery</span>
               </h1>
+              <p className="text-lg md:text-xl opacity-90 mt-2">Hi-tech Producer of Quality Plants</p>
             </div>
           </div>
 
@@ -99,27 +100,29 @@ const Hero = () => {
           </div>
 
           {/* Director's Message */}
-          <div className="max-w-4xl mx-auto mb-8 bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-            <h3 className="text-xl font-bold mb-4 text-accent">Director's Message</h3>
-            <div className="text-left">
-              <p className="text-base opacity-90 leading-relaxed mb-4">
-                Dear Visitors,<br/>
+          <div className="max-w-5xl mx-auto mb-8 bg-white/15 backdrop-blur-sm rounded-2xl p-8 border border-white/30 shadow-2xl">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-accent text-center">Director's Message</h3>
+            <div className="text-left space-y-4">
+              <p className="text-lg md:text-xl opacity-95 leading-relaxed">
+                <strong>Dear Visitors,</strong><br/>
                 Welcome to our green world.
               </p>
-              <p className="text-base opacity-90 leading-relaxed mb-4">
-                At Majitha Floriculture<span className="text-sm">®</span> Nursery, we don't just grow plants — we grow life, color, and sustainability. Every leaf, every bloom, every root we nurture carries our promise: to bring nature closer to you in the most responsible, beautiful, and innovative way possible.
+              <p className="text-base md:text-lg opacity-90 leading-relaxed">
+                At Majitha Floriculture™ Nursery, we don't just grow plants — we grow life, color, and sustainability. Every leaf, every bloom, every root we nurture carries our promise: to bring nature closer to you in the most responsible, beautiful, and innovative way possible.
               </p>
-              <p className="text-base opacity-90 leading-relaxed mb-4">
+              <p className="text-base md:text-lg opacity-90 leading-relaxed">
                 We believe horticulture is not just an industry — it's a living art. Whether you're a home gardener, a landscape designer, or a business seeking eco-friendly solutions, we're here to turn your spaces into thriving green experiences.
               </p>
-              <p className="text-base opacity-90 leading-relaxed mb-2">
+              <p className="text-base md:text-lg opacity-90 leading-relaxed">
                 Thank you for trusting us. Let's grow together.
               </p>
-              <p className="text-base font-semibold">
-                Warm regards,<br/>
-                <span className="text-accent">Nitin Agrawal</span><br/>
-                <span className="text-sm opacity-80">Director</span>
-              </p>
+              <div className="text-right mt-6">
+                <p className="text-lg md:text-xl font-semibold">
+                  Warm regards,<br/>
+                  <span className="text-accent text-xl md:text-2xl">Nitin Agrawal</span><br/>
+                  <span className="text-base opacity-80">Director, Majitha Floriculture™ Nursery</span>
+                </p>
+              </div>
             </div>
           </div>
 
