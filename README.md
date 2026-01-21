@@ -1,73 +1,64 @@
-# Welcome to your Lovable project
+# 🌱 Majitha Floriculture™ Nursery – Official Website
 
-## Project info
+The official website of **Majitha Floriculture™ Nursery**, Central India’s leading government-recognized plant nursery.  
+The site presents the nursery’s services, plant varieties, credentials, and institutional clientele through a modern, responsive interface.
 
-**URL**: https://lovable.dev/projects/c093604c-843d-463a-9288-53b5e01a3252
+🔗 **Live Site:** https://majithafloriulturenursery.vercel.app/
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🌿 About
 
-**Use Lovable**
+Established in **2007**, Majitha Floriculture™ Nursery operates across **20 acres** in Bhedaghat, Jabalpur (M.P.), offering **1000+ plant varieties** and serving government, institutional, and large-scale landscaping projects across India.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c093604c-843d-463a-9288-53b5e01a3252) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+- Responsive, mobile-first design  
+- Plant catalog (Grafted, Forestry, Tissue Culture, Ornamentals)  
+- Government & institutional client showcase  
+- Official recognitions and certifications  
+- Categorized image gallery  
+- Clear call-to-action and contact sections  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Tech Stack
 
-Follow these steps:
+- **Frontend:** HTML5, CSS3, JavaScript  
+- **Static Site Generator:** Jekyll  
+- **Hosting:** Vercel  
+- **CI/CD:** GitHub Actions + GitHub Pages  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Deployment
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Automatic build & deployment on every push to `main`
+- Jekyll site compiled into static files
+- GitHub Actions handles build and release
+- Concurrency control prevents conflicting deployments
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🏆 Credentials Highlighted
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- ⭐ Star-Rated Nursery (National Horticulture Board)  
+- 🌱 Big Model Nursery (National Horticulture Mission)  
+- 🏅 One of the largest nurseries in Madhya Pradesh  
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📍 Contact
 
-## What technologies are used for this project?
+**Majitha Floriculture™ Nursery**  
+Bhedaghat, Jabalpur, Madhya Pradesh  
+📧 majithafloriculture@gmail.com  
+📞 +91-9425324580 / 9303040400  
 
-This project is built with:
+> *Rooted in quality, growing with integrity.*
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c093604c-843d-463a-9288-53b5e01a3252) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+© 2024 Majitha Floriculture™ Nursery. All rights reserved.
