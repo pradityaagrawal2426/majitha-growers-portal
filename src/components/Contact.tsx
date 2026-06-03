@@ -71,8 +71,8 @@ Message: ${formData.message}`;
     {
       icon: Mail,
       title: "Email",
-      info: "majithafloricultre@gmail.com",
-      detail: "pradityaagrawal2426@gmail.com"
+      info: "pradityaagrawal2426@gmail.com",
+      detail: "majithafloricultre@gmail.com"
     },
     {
       icon: Clock,
