@@ -65,14 +65,14 @@ Message: ${formData.message}`;
     {
       icon: Phone,
       title: "Phone",
-      info: "9425324850",
+      info: "7089009002, 9425324850",
       detail: "All Days Open: 10:00 AM - 10:00 PM"
     },
     {
       icon: Mail,
       title: "Email",
       info: "majithafloricultre@gmail.com",
-      detail: "We reply within 24 hours"
+      detail: "pradityaagrawal2426@gmail.com"
     },
     {
       icon: Clock,

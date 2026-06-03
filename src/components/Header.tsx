@@ -86,7 +86,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="w-4 h-4" />
-              <span>9425324850</span>
+              <span>7089009002</span>
             </div>
             <Button asChild className="bg-primary hover:bg-primary/90">
               <Link to="/contact">Enquire Now</Link>
@@ -165,7 +165,7 @@ const Header = () => {
               <div className="pt-4 border-t border-border">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-4">
                   <Phone className="w-4 h-4" />
-                  <span>9425324850</span>
+                  <span>7089009002</span>
                 </div>
                 <Button asChild className="w-full">
                   <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Enquire Now</Link>
