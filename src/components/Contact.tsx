@@ -266,13 +266,11 @@ Message: ${formData.message}`;
                 From small gardens to large-scale forestry projects, we're your trusted partner.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-primary hover:bg-primary/90">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Now
-                </Button>
-                <Button size="lg" variant="outline">
-                  <Mail className="w-5 h-5 mr-2" />
-                  Email Us
+                <Button size="lg" variant="outline" asChild>
+                  <a href="mailto:pradityaagrawal2426@gmail.com">
+                    <Mail className="w-5 h-5 mr-2" />
+                    Email Us
+                  </a>
                 </Button>
               </div>
             </CardContent>
