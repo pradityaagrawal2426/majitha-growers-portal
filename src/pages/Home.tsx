@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import PhotoStrip from "@/components/PhotoStrip";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -166,6 +167,15 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <PhotoStrip
+        subtitle="Glimpses"
+        title="A Look Inside Our Nursery"
+        images={[
+          { src: "/lovable-uploads/36b1721e-5787-4418-a6d8-7cf7367a5bdc.png", alt: "Nursery overview with greenhouses", caption: "20 Acre Facility" },
+          { src: "/lovable-uploads/5379eded-3b0c-4211-bdd6-5a86b8342fba.png", alt: "Container plant production", caption: "Container Plants" },
+          { src: "/lovable-uploads/50da42e3-6458-4feb-936d-5fc582fc8957.png", alt: "Healthy nursery plants", caption: "Healthy Stock" },
+        ]}
+      />
       <Footer />
     </div>
   );

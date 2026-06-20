@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PhotoStrip from "@/components/PhotoStrip";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building, Users, Landmark, TreePine, Hammer, Zap, Heart, Mountain, GraduationCap, Factory, Dam } from "lucide-react";
@@ -121,6 +122,16 @@ const Clients = () => {
           </div>
         </div>
       </section>
+
+      <PhotoStrip
+        subtitle="Trusted Supply"
+        title="Plants Delivered Across India"
+        images={[
+          { src: "/lovable-uploads/c2610a9e-0f83-4d6c-beda-3aa513352719.png", alt: "Nursery field overview", caption: "Large Inventory" },
+          { src: "/lovable-uploads/f047e4c7-74ff-4188-96ec-8db5d97688ad.png", alt: "Open field cultivation", caption: "Field Production" },
+          { src: "/lovable-uploads/36b1721e-5787-4418-a6d8-7cf7367a5bdc.png", alt: "Nursery infrastructure", caption: "Infrastructure" },
+        ]}
+      />
 
       <Footer />
     </div>
