@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PhotoStrip from "@/components/PhotoStrip";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -205,6 +206,16 @@ const Products = () => {
           </div>
         </div>
       </section>
+
+      <PhotoStrip
+        subtitle="Our Range"
+        title="From Saplings to Mature Plants"
+        images={[
+          { src: "/lovable-uploads/aae05f68-b538-4639-9117-ba76033b243a.png", alt: "Fresh guava on tree", caption: "Fruit Plants" },
+          { src: "/lovable-uploads/9bf8ba29-3b22-40b0-9673-c4816dcb9fcd.png", alt: "Tissue culture plants", caption: "Tissue Culture" },
+          { src: "/lovable-uploads/16691c7f-49ab-4390-8517-23085bfc5ec3.png", alt: "Young plant saplings", caption: "Young Plants" },
+        ]}
+      />
 
       <Footer />
     </div>
